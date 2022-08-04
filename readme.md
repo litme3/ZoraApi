@@ -11,7 +11,7 @@
 }
 ```
 
-sig: signature
-derivedVia : method used 
-signedMessage : message signed
-address : msg.sender 
+- sig: signature
+- derivedVia : method used 
+- signedMessage : message signed
+- address : msg.sender 
