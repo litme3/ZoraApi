@@ -80,7 +80,7 @@ const go = async () => {
  */
 const signAuthMessage = async () => {
 
-    const privKey ="YOUR PRIVATE KEY";
+    const privKey ="PUT YOUR PRIVATE KEY";
     const privKeyBuffer = u8a.fromString(privKey, "base16");
     const wallet = new ethers.Wallet(privKeyBuffer);
 
