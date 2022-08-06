@@ -10,7 +10,7 @@ const go = async () => {
 
     await litNodeClient.connect();
 
-    const messageToEncrypt = " ENCRYPTED MESSAGE OK. ";
+    const messageToEncrypt = " This dude has followed me ";
 
     const chain = 'goerli';
 
@@ -18,20 +18,19 @@ const go = async () => {
 
     const accessControlConditions = [
         {
-          contractAddress: '',
-          standardContractType: '',
+          contractAddress: '0x39Ec448b891c476e166b3C3242A90830DB556661',
+          standardContractType: 'ERC721',
           chain,
-          method: 'eth_getBalance',
+          method: 'balanceOf',
           parameters: [
-            ':userAddress',
-            'latest'
+            ':userAddress'
           ],
           returnValueTest: {
-            comparator: '>=',
-            value: '10000000000000'
+            comparator: '>',
+            value: '0'
           }
         }
-    ]
+      ]
 
     // 1. Encryption
     // <Blob> encryptedString
@@ -46,6 +45,9 @@ const go = async () => {
         authSig,
         chain,
     });
+
+    console.log("ENCRYPTEEEED", encryptedString);
+   
 
     // 3. Decrypt it
     // <String> toDecrypt
@@ -80,7 +82,7 @@ const go = async () => {
  */
 const signAuthMessage = async () => {
 
-    const privKey ="PUT YOUR PRIVATE KEY";
+    const privKey ="PRIVATE_KEY";
     const privKeyBuffer = u8a.fromString(privKey, "base16");
     const wallet = new ethers.Wallet(privKeyBuffer);
 
@@ -102,7 +104,7 @@ const signAuthMessage = async () => {
 
     const signature = await wallet.signMessage(messageToSign);
 
-    console.log("signature", signature);
+    //console.log("signature", signature);
 
     const recoveredAddress = ethers.utils.verifyMessage(messageToSign, signature);
 
