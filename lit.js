@@ -46,7 +46,21 @@ const go = async () => {
         chain,
     });
 
+
+
     console.log("ENCRYPTEEEED", encryptedString);
+
+
+    // --------  BLOB TO STRING ------ 
+    // let reader = new FileReader();
+    // reader.readAsDataURL(encryptedString); // converts the blob to base64 and calls onload
+
+    // reader.onload = function() {
+    //     STINGED = reader.result;
+    // }
+
+    // console.log("NEEEW", STINGED)
+
    
 
     // 3. Decrypt it
@@ -73,7 +87,7 @@ const go = async () => {
         console.log(e);
     }
 
-    console.warn("decryptedString:", decryptedString);
+    //console.warn("decryptedString:", decryptedString);
 }
 
 /**
@@ -82,7 +96,7 @@ const go = async () => {
  */
 const signAuthMessage = async () => {
 
-    const privKey ="PRIVATE_KEY";
+    const privKey ="5034f6fc81f0fb42429875413da341faf69888122913159b2aa15d3e98f37bb9";
     const privKeyBuffer = u8a.fromString(privKey, "base16");
     const wallet = new ethers.Wallet(privKeyBuffer);
 
