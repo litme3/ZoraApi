@@ -96,7 +96,7 @@ const go = async () => {
  */
 const signAuthMessage = async () => {
 
-    const privKey ="5034f6fc81f0fb42429875413da341faf69888122913159b2aa15d3e98f37bb9";
+    const privKey ="PRIV_KEY";
     const privKeyBuffer = u8a.fromString(privKey, "base16");
     const wallet = new ethers.Wallet(privKeyBuffer);
 
