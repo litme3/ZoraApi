@@ -1,14 +1,15 @@
-import * as LitJsSdk from "lit-js-sdk";
+import LitJsSdk from "lit-js-sdk";
 
-const client = new LitJsSdk.LitNodeClient()
-const chain = 'goerli'
+
+const litNodeClient = new LitJsSdk.LitNodeClient();
+await litNodeClient.connect();
 
 
 const accessControlConditionsNFT = [
     {
       contractAddress: '0x39Ec448b891c476e166b3C3242A90830DB556661',
       standardContractType: 'ERC721',
-      chain,
+      chain : "goerli",
       method: 'balanceOf',
       parameters: [
         ':userAddress'
@@ -39,7 +40,7 @@ class Lit {
       accessControlConditions: accessControlConditionsNFT,
       symmetricKey,
       authSig,
-      chain,
+      goerli,
     })
 
     return {
@@ -52,11 +53,11 @@ class Lit {
     if (!this.litNodeClient) {
       await this.connect()
     }
-    const authSig = await LitJsSdk.checkAndSignAuthMessage({ chain })
+    const authSig = await LitJsSdk.checkAndSignAuthMessage({ goerli })
     const symmetricKey = await this.litNodeClient.getEncryptionKey({
       accessControlConditions: accessControlConditionsNFT,
       toDecrypt: encryptedSymmetricKey,
-      chain,
+      goerli,
       authSig
     })
     const decryptedFile = await LitJsSdk.decryptString(
@@ -68,7 +69,10 @@ class Lit {
       decryptedFile
     })
     return { decryptedFile }
+    console.log(decryptedFile)
+
   }
+
 }
 
 export default new Lit()
