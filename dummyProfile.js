@@ -7,7 +7,7 @@ let nordimukiele = {
     links : [ ["Instagram", "https://www.instagram.com/nordimukiele/"], ["Twitter", "https://twitter.com/NordiMukiele"]] 
 }
 
-let JohnnyDrille = {
+let johnnyDrille = {
     address: "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
     username : "Johnny_Drille",
     avatar : "https://bafkreiddqz53d7422nft6zgn62bzwz44o7tla2rzvevhvv6deeuo5jqz7e.ipfs.nftstorage.link/",
@@ -26,7 +26,7 @@ let andrewTate = {
 }
 
 
-let PatrickCollins = {
+let patrickCollins = {
     address: "0x9965507d1a55bcc2695c58ba16fb37d819b0a4dc",
     username : "Patrickins",
     avatar : "https://bafkreihhylx4muzz6xprak5ova5tr7f3ncmfhfa447u4wjpkzzyq2rw5ja.ipfs.nftstorage.link/",
@@ -35,7 +35,7 @@ let PatrickCollins = {
     links : [ ["Instagram", "https://www.instagram.com/_patrick.collins/"], ["Twitter", "https://twitter.com/PatrickAlphaC"]] 
 }
 
-let CarlaMoreau = {
+let carlaMoreau = {
     address: "0x976ea74026e726554db657fa54763abd0c3a0aa9",
     username : "Carlamu",
     avatar : "https://bafkreig3oaobxpkqeyosq3mb7nxq7phibaq3xjoivyqvwhtnjceas7w46y.ipfs.nftstorage.link/",
@@ -44,7 +44,7 @@ let CarlaMoreau = {
     links : [ ["Instagram", "https://www.instagram.com/carlamoreau_____/"], ["Twitter", "https://twitter.com/carlamoreau____"]] 
 }
 
-let MatthewMcConaughey = {
+let matthew = {
     address: "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
     username : "Mattheyyy",
     avatar : "https://bafkreiaknkmdpi2azploxztmvq3r2cexorjqbvnvdc656aturswmoprxye.ipfs.nftstorage.link/",
@@ -53,7 +53,7 @@ let MatthewMcConaughey = {
     links : [ ["Instagram", "https://www.instagram.com/officiallymcconaughey/"], ["Twitter", "https://twitter.com/McConaughey"]] 
 }
 
-let Max = {
+let rokyte = {
     address: "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
     username : "Max",
     avatar : "https://bafkreibhj2oiuxgig54zewojqmqchp4zahu5i5fjgfpqfgwgdp56x4taku.ipfs.nftstorage.link/",
@@ -62,7 +62,7 @@ let Max = {
     links : [ ["Instagram", "https://www.instagram.com/dogs.lovers/"], ["Twitter", "https://twitter.com/Crazyrottweile1"]] 
 }
 
-let AlixBezech = {
+let alixbzch = {
     address: "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
     username : "Alixbch",
     avatar : "https://bafkreidbzu6wvaxknd552p7qscuv7y2ytrljhqv33plnwphla5po2vijle.ipfs.nftstorage.link/",
