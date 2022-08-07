@@ -31,21 +31,24 @@ class Lit {
     this.litNodeClient = client
   }
 
+
   async encryptString(str) {
-    if (!this.litNodeClient) {
-      await this.connect()
-    }
-    const authSig = await LitJsSdk.checkAndSignAuthMessage({ chain })
-    const { encryptedString, symmetricKey } = await LitJsSdk.encryptString("OOOOOK")
-    console.log(encryptedString)
+      if (!this.litNodeClient) {
+          await this.connect()
+      }
+
+      console.log()
+      const authSig = await LitJsSdk.checkAndSignAuthMessage({ chain })
+      const { encryptedString, symmetricKey } = await LitJsSdk.encryptString("OOOOOK")
+      console.log(encryptedString)
 
 
-    const encryptedSymmetricKey = await this.litNodeClient.saveEncryptionKey({
-      accessControlConditions: accessControlConditionsNFT,
-      symmetricKey,
-      authSig,
-      chain,
-    })
+      const encryptedSymmetricKey = await this.litNodeClient.saveEncryptionKey({
+          accessControlConditions: accessControlConditionsNFT,
+          symmetricKey,
+          authSig,
+          chain,
+  })
 
     
     return {
