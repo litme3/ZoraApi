@@ -53,7 +53,7 @@ let MatthewMcConaughey = {
     links : [ ["Instagram", "https://www.instagram.com/officiallymcconaughey/"], ["Twitter", "https://twitter.com/McConaughey"]] 
 }
 
-let Max  = {
+let Max = {
     address: "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
     username : "Max",
     avatar : "https://bafkreibhj2oiuxgig54zewojqmqchp4zahu5i5fjgfpqfgwgdp56x4taku.ipfs.nftstorage.link/",
@@ -62,7 +62,7 @@ let Max  = {
     links : [ ["Instagram", "https://www.instagram.com/dogs.lovers/"], ["Twitter", "https://twitter.com/Crazyrottweile1"]] 
 }
 
-let AlixBénézech = {
+let AlixBezech = {
     address: "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
     username : "Alixbch",
     avatar : "https://bafkreidbzu6wvaxknd552p7qscuv7y2ytrljhqv33plnwphla5po2vijle.ipfs.nftstorage.link/",
