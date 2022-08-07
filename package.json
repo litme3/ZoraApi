@@ -5,8 +5,11 @@
   },
   "dependencies": {
     "ethers": "^5.6.9",
+    "graphql": "^16.5.0",
+    "graphql-request": "^4.3.0",
     "lit-ceramic-sdk": "^1.1.13",
     "lit-js-sdk": "^1.2.7",
+    "request": "^2.88.2",
     "siwe": "^1.1.6",
     "ts-node": "^10.9.1",
     "tsc": "^2.0.4",
