@@ -34,3 +34,99 @@ let PatrickCollins = {
     bio: "BlockEnd",
     links : [ ["Instagram", "https://www.instagram.com/_patrick.collins/"], ["Twitter", "https://twitter.com/PatrickAlphaC"]] 
 }
+
+let  = {
+    address: "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+    username : "",
+    avatar : "",
+    banner : "",
+    bio: "",
+    links : [ ["Instagram", ""], ["Twitter", ""]] 
+}
+
+let  = {
+    address: "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+    username : "",
+    avatar : "",
+    banner : "",
+    bio: "",
+    links : [ ["Instagram", ""], ["Twitter", ""]] 
+}
+
+let  = {
+    address: "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+    username : "",
+    avatar : "",
+    banner : "",
+    bio: "",
+    links : [ ["Instagram", ""], ["Twitter", ""]] 
+}
+
+let  = {
+    address: "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+    username : "",
+    avatar : "",
+    banner : "",
+    bio: "",
+    links : [ ["Instagram", ""], ["Twitter", ""]] 
+}
+
+let  = {
+    address: "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+    username : "",
+    avatar : "",
+    banner : "",
+    bio: "",
+    links : [ ["Instagram", ""], ["Twitter", ""]] 
+}
+
+let  = {
+    address: "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+    username : "",
+    avatar : "",
+    banner : "",
+    bio: "",
+    links : [ ["Instagram", ""], ["Twitter", ""]] 
+}
+
+let  = {
+    address: "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+    username : "",
+    avatar : "",
+    banner : "",
+    bio: "",
+    links : [ ["Instagram", ""], ["Twitter", ""]] 
+}
+
+let  = {
+    address: "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+    username : "",
+    avatar : "",
+    banner : "",
+    bio: "",
+    links : [ ["Instagram", ""], ["Twitter", ""]] 
+}
+
+let  = {
+    address: "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+    username : "",
+    avatar : "",
+    banner : "",
+    bio: "",
+    links : [ ["Instagram", ""], ["Twitter", ""]] 
+}
+
+let  = {
+    address: "0x976ea74026e726554db657fa54763abd0c3a0aa9",
+    username : "",
+    avatar : "",
+    banner : "",
+    bio: "",
+    links : [ ["Instagram", ""], ["Twitter", ""]] 
+}
+
+
+
+
+
+
