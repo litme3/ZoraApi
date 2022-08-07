@@ -6,7 +6,16 @@ This is the officiel Metabolism Hackathon 2022 submission for our project Phase 
 ## Project Description 
 
 
+
+
+
+
 ## Features 
+
+
+
+
+
 
 
 
@@ -16,7 +25,10 @@ This is the officiel Metabolism Hackathon 2022 submission for our project Phase 
 
 
 
-## What's next for Debate3 ? 
+
+
+
+## What's next for Phase ? 
 
 
 
@@ -28,7 +40,15 @@ This is the officiel Metabolism Hackathon 2022 submission for our project Phase 
 
 
 
+
+
+
+
 ## Contact Information :
+
+
+
+
 
 
 
