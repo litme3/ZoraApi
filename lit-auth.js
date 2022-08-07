@@ -4,12 +4,14 @@ import LitJsSdk from "lit-js-sdk";
 const litNodeClient = new LitJsSdk.LitNodeClient();
 await litNodeClient.connect();
 
+const chain = 'goerli';
+
 
 const accessControlConditionsNFT = [
     {
       contractAddress: '0x39Ec448b891c476e166b3C3242A90830DB556661',
       standardContractType: 'ERC721',
-      chain : "goerli",
+      chain : "chain",
       method: 'balanceOf',
       parameters: [
         ':userAddress'
@@ -33,31 +35,38 @@ class Lit {
     if (!this.litNodeClient) {
       await this.connect()
     }
-    const authSig = await LitJsSdk.checkAndSignAuthMessage({ goerli })
-    const { encryptedString, symmetricKey } = await LitJsSdk.encryptString(str)
+    const authSig = await LitJsSdk.checkAndSignAuthMessage({ chain })
+    const { encryptedString, symmetricKey } = await LitJsSdk.encryptString("OOOOOK")
+    console.log(encryptedString)
+
 
     const encryptedSymmetricKey = await this.litNodeClient.saveEncryptionKey({
       accessControlConditions: accessControlConditionsNFT,
       symmetricKey,
       authSig,
-      goerli,
+      chain,
     })
 
+    
     return {
       encryptedFile: encryptedString,
       encryptedSymmetricKey: LitJsSdk.uint8arrayToString(encryptedSymmetricKey, "base16")
     }
+
   }
+
+
+
 
   async decryptString(encryptedStr, encryptedSymmetricKey) {
     if (!this.litNodeClient) {
       await this.connect()
     }
-    const authSig = await LitJsSdk.checkAndSignAuthMessage({ goerli })
+    const authSig = await LitJsSdk.checkAndSignAuthMessage({ chain })
     const symmetricKey = await this.litNodeClient.getEncryptionKey({
       accessControlConditions: accessControlConditionsNFT,
       toDecrypt: encryptedSymmetricKey,
-      goerli,
+      chain,
       authSig
     })
     const decryptedFile = await LitJsSdk.decryptString(
@@ -69,11 +78,38 @@ class Lit {
       decryptedFile
     })
     return { decryptedFile }
-    console.log(decryptedFile)
-
   }
 
+  async signAuthMessage() {
+
+   
+    const siweMessage = new siwe.SiweMessage({
+    domain,
+    address: wallet.address,
+    statement,
+    uri: origin,
+    version: "1",
+    chainId: "5",
+    });
+
+    const messageToSign = siweMessage.prepareMessage();
+
+    const signature = await wallet.signMessage(messageToSign);
+
+    //console.log("signature", signature);
+
+    const recoveredAddress = ethers.utils.verifyMessage(messageToSign, signature);
+
+    const authSig = {
+    sig: signature,
+    derivedVia: "web3.eth.personal.sign",
+    signedMessage: messageToSign,
+    address: recoveredAddress,
+    };
+
+    return authSig;
 }
 
-export default new Lit()
+
+}
 
